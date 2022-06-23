@@ -1,38 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formatação de Textos</title>
-    <style>
-        em {
-            background-color: limegreen;
-        }
-        mark {
-            background-color: rgba(51, 135, 204, 0.4);
-        }
-    </style>
+    <title>Outras formatações</title>
 </head>
 <body>
-    <h1>Pricipais formatações</h1>
-    <h2>Negrito / Destaque</h2>
-    <p>Nessa frase, temos um <b>termo em negrito usando a tag B (não Semântica)</b></p>
-    <p>Nessa frase, temos um <strong> termo em negrito usando a tag STRONG (Semântica)</strong></p>   
-    <h2>Itálico / Ênfase</h2>
-    <p>Nessa frase, temos um <i>termo em Itálico</i> usando a tag I (não semântica)</p>
-    <p>Nessa frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica)</p>
-    <h2>Texto marcado</h2>
-    <p>Podemos criar também <mark>um texto marcado</mark> com a tag MARK.</p>
-    <h2>Texto grande e pequeno</h2>
-    <p>Estamos criando um <big>texto grande</big> e um <small>pequeno</small> nesse parágrafo</p>
-    <h2>Texto deletado</h2>
-    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
-    <h2>Texto inserido</h2>
-    <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
-    <h2>Texto sobrescrito</h2>
-    <p>para inserir coisas do tipo x<sup>20</sup>+3, usamos SUP.</p>
-    <h2>Texto subscrito</h2>
-    <p>Para inserir coisas do tipo H<sub>2</sub>O, usamos SUP.</p>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code></p>
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR)
+            else:
+                print(f'O número {num} é ÍMPAR')    
+            print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote cite="https://github.com/AlanBritoDev/tt">
+        A diferença entre elementos inline e um bloco de texto é impotante. Os elementos HTML...
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Fulano é presidente dos <abbr title="Estados unidos da América">EUA</abbr></p>
+    <p>Estou estudando <abbr title="HiperText Markup Language">HTML.</abbr></p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou estudando HTML.</bdo></p>
 </body>
 </html>
